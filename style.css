@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fancy-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.fancy-elements-container {
+    position: relative;
+}
+
+.left-line,
+.right-line {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background-color: gold;
+}
+
+.left-line {
+    left: 100px;
+}
+
+.right-line {
+    right: 100px;
+}
+
+.left-line img,
+.right-line img {
+    width: 20px;
+    bottom: 200px;
+    left: -10px;
+    position: absolute;
+}
+
+.board {
+    background-color: cyan;
+}
