@@ -10,12 +10,14 @@ fetch("https://tech-club-api.onrender.com/honour-roll-data")
 
             board.innerHTML = `
                 <h2 class="year">${board_data.year}</h2>
+                <br>
                 <div class="people">
                     ${board_data.people
                         .map((person) => {
                             return `
                             <div class="person-info">
                                 <div class="name">${person.name}, ${person.class}</div>
+                                <br>
                                 <div class="title"
                                 >${person.title}</div>
                             </div>
