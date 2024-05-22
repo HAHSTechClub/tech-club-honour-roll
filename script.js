@@ -3,7 +3,7 @@ const boardsContainter = document.querySelector(".boards-container");
 fetch("https://tech-club-api.onrender.com/honour-roll-data")
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
+        document.querySelector(".loading").remove();
         data.forEach((board_data) => {
             const board = document.createElement("div");
             board.classList.add("board");
