@@ -47,20 +47,6 @@
     justify-content: space-evenly;
 
     line-height: 1.5;
-    padding: 0px;
-}
-
-.board {
-    margin: 0 auto;
-    padding-bottom: 30px;
-    padding-top: 15px;
-    width: 65%;
-    background-color: white;
-    line-height: 1.5;
-    color: black;
-    border: 2px solid #737373;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .WebsiteName {
@@ -114,35 +100,22 @@
 .name {
     font-size: 35px;
     color: #584910;
-    flex-basis: 48%;
     text-align: center;
-    padding-top: 3%;
-    line-height: 5%;
     font-family: "Times New Roman", Times;
 }
 
 .year {
-    padding: 5px;
-    flex-basis: 48%;
     font-size: 42px;
     color: black;
     padding: 5px;
     font-family: "Cinzel Decorative";
 }
 
-.title {
-    flex-basis: 48%;
-    padding-left: 50%;
-    font-size: 23px;
-    color: #bc9c22;
-    padding: 5px;
-    padding-bottom: 5%;
-    font-family: "Times New Roman", Times;
-}
-
 .people {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -168,4 +141,23 @@
     text-align: center;
     margin-bottom: 40px;
     justify-content: space-evenly; /* Adjust this value as needed */
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 24px;
+    }
 }

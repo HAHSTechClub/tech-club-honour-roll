@@ -17,7 +17,6 @@ fetch("https://tech-club-api.onrender.com/honour-roll-data")
                             return `
                             <div class="person-info">
                                 <div class="name">${person.name}, ${person.class}</div>
-                                <br>
                                 <div class="title"
                                 >${person.title}</div>
                             </div>
